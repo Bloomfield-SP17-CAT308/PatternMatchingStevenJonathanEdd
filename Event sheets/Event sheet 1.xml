@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block any="1" sid="362219819159860">
+            <conditions>
+                <condition id="-33" name="Pick by comparison" sid="913287854382175" type="System">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="Expression">Player.AnimationFrame</param>
+                    <param id="2" name="Comparison">0</param>
+                    <param id="3" name="Value">4</param>
+                </condition>
+                <condition id="-33" name="Pick by comparison" sid="786342716281817" type="System">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="Expression">Player.AnimationFrame</param>
+                    <param id="2" name="Comparison">0</param>
+                    <param id="3" name="Value">5</param>
+                </condition>
+                <condition id="-33" name="Pick by comparison" sid="373936297512601" type="System">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="Expression">Player.AnimationFrame</param>
+                    <param id="2" name="Comparison">0</param>
+                    <param id="3" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="247647519165640">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="143595429940944" type="Player">
+                            <param id="0" name="Object">Sprite2</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="119386609585950" type="Player">
+                            <param id="0" name="Object">Sprite3</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="243313633600311" type="Player">
+                            <param id="0" name="Object">Sprite4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="412508164278467" type="Player">
+                            <param id="0" name="Frame number">7</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="603726827453638" type="Sprite2" />
+                        <action id="-9" name="Destroy" sid="941934591732469" type="Sprite3" />
+                        <action id="-9" name="Destroy" sid="166779721603791" type="Sprite4" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="774157376872771">
+            <conditions>
+                <condition id="-33" name="Pick by comparison" sid="889443665211547" type="System">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="Expression">Player.AnimationFrame</param>
+                    <param id="2" name="Comparison">0</param>
+                    <param id="3" name="Value">0</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="781660597950684" type="Player">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="404331852529770" type="Player">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="139913116065552" type="Sprite2" />
+            </actions>
+        </event-block>
+        <event-block sid="574703099300857">
+            <conditions>
+                <condition id="-33" name="Pick by comparison" sid="160982939836112" type="System">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="Expression">Player.AnimationFrame</param>
+                    <param id="2" name="Comparison">0</param>
+                    <param id="3" name="Value">0</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="777788576977541" type="Player">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="864274794655773" type="Player">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+                <action id="-9" name="Destroy" sid="180613677032972" type="Sprite4" />
+            </actions>
+        </event-block>
+        <event-block sid="218617601673900">
+            <conditions>
+                <condition id="-33" name="Pick by comparison" sid="392894519676822" type="System">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="Expression">Player.AnimationFrame</param>
+                    <param id="2" name="Comparison">0</param>
+                    <param id="3" name="Value">0</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="603386506310545" type="Player">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="220179900593723" type="Player">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+                <action id="-9" name="Destroy" sid="693439409774916" type="Sprite3" />
+            </actions>
+        </event-block>
+        <event-block sid="642154190640341">
+            <conditions>
+                <condition id="-33" name="Pick by comparison" sid="166604403859951" type="System">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="Expression">Player.AnimationFrame</param>
+                    <param id="2" name="Comparison">0</param>
+                    <param id="3" name="Value">1</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="966739057199548" type="Player">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="997870031768581" type="Player">
+                    <param id="0" name="Frame number">4</param>
+                </action>
+                <action id="-9" name="Destroy" sid="586514916658246" type="Sprite4" />
+            </actions>
+        </event-block>
+        <event-block sid="512823818606802">
+            <conditions>
+                <condition id="-33" name="Pick by comparison" sid="277576476220123" type="System">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="Expression">Player.AnimationFrame</param>
+                    <param id="2" name="Comparison">0</param>
+                    <param id="3" name="Value">1</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="834860301705265" type="Player">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="926742142364760" type="Player">
+                    <param id="0" name="Frame number">5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="804853572979211" type="Sprite3" />
+            </actions>
+        </event-block>
+        <event-block sid="847421892576588">
+            <conditions>
+                <condition id="-33" name="Pick by comparison" sid="113139219512653" type="System">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="Expression">Player.AnimationFrame</param>
+                    <param id="2" name="Comparison">0</param>
+                    <param id="3" name="Value">2</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="376085708789818" type="Player">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="283855252220731" type="Player">
+                    <param id="0" name="Frame number">6</param>
+                </action>
+                <action id="-9" name="Destroy" sid="919706777237125" type="Sprite3" />
+            </actions>
+        </event-block>
+        <event-block sid="485800682862512">
+            <conditions>
+                <condition id="-33" name="Pick by comparison" sid="159750584232948" type="System">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="Expression">player.AnimationFrame</param>
+                    <param id="2" name="Comparison">0</param>
+                    <param id="3" name="Value">2</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="964493787774801" type="Player">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="689471634641714" type="Player">
+                    <param id="0" name="Frame number">4</param>
+                </action>
+                <action id="-9" name="Destroy" sid="891855258993386" type="Sprite2" />
+            </actions>
+        </event-block>
+        <event-block sid="857104755692367">
+            <conditions>
+                <condition id="-33" name="Pick by comparison" sid="502241938978259" type="System">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="Expression">Player.AnimationFrame</param>
+                    <param id="2" name="Comparison">0</param>
+                    <param id="3" name="Value">3</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="486182145417243" type="Player">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="218613473332447" type="Player">
+                    <param id="0" name="Frame number">5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="184759321351152" type="Sprite2" />
+            </actions>
+        </event-block>
+        <event-block sid="731082340479874">
+            <conditions>
+                <condition id="-33" name="Pick by comparison" sid="740991303644191" type="System">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="Expression">Player.AnimationFrame</param>
+                    <param id="2" name="Comparison">0</param>
+                    <param id="3" name="Value">3</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="383978057416218" type="Player">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="306966953102369" type="Player">
+                    <param id="0" name="Frame number">6</param>
+                </action>
+                <action id="-9" name="Destroy" sid="615647348277786" type="Sprite4" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
