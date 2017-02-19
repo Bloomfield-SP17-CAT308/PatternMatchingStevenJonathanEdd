@@ -3,25 +3,19 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
-        <event-block any="1" sid="362219819159860">
+        <variable constant="0" name="EnemyHealth" sid="612062547382636" static="0" type="number">3</variable>
+        <event-block sid="362219819159860">
             <conditions>
                 <condition id="-33" name="Pick by comparison" sid="913287854382175" type="System">
                     <param id="0" name="Object">Player</param>
                     <param id="1" name="Expression">Player.AnimationFrame</param>
-                    <param id="2" name="Comparison">0</param>
+                    <param id="2" name="Comparison">5</param>
                     <param id="3" name="Value">4</param>
                 </condition>
-                <condition id="-33" name="Pick by comparison" sid="786342716281817" type="System">
-                    <param id="0" name="Object">Player</param>
-                    <param id="1" name="Expression">Player.AnimationFrame</param>
-                    <param id="2" name="Comparison">0</param>
-                    <param id="3" name="Value">5</param>
-                </condition>
-                <condition id="-33" name="Pick by comparison" sid="373936297512601" type="System">
-                    <param id="0" name="Object">Player</param>
-                    <param id="1" name="Expression">Player.AnimationFrame</param>
-                    <param id="2" name="Comparison">0</param>
-                    <param id="3" name="Value">6</param>
+                <condition id="-8" name="Compare two values" sid="667377371759672" type="System">
+                    <param id="0" name="First value">Player.AnimationFrame</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Second value">7</param>
                 </condition>
             </conditions>
             <actions />
@@ -218,6 +212,104 @@
                     <param id="0" name="Frame number">6</param>
                 </action>
                 <action id="-9" name="Destroy" sid="615647348277786" type="Sprite4" />
+            </actions>
+        </event-block>
+        <event-block sid="627914771135499">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="636172426089541" type="Sprite2" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="858325924037012" type="System">
+                    <param id="0" name="Seconds">4.0</param>
+                </action>
+                <action id="-3" name="Create object" sid="765920472642986" type="System">
+                    <param id="0" name="Object to create">Sprite2</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">417</param>
+                    <param id="3" name="Y">524</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="543288254526707">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="592668562022252" type="Sprite3" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="316705384323978" type="System">
+                    <param id="0" name="Seconds">4.0</param>
+                </action>
+                <action id="-3" name="Create object" sid="980300254556916" type="System">
+                    <param id="0" name="Object to create">Sprite3</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">67</param>
+                    <param id="3" name="Y">498</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="233247330039054">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="490505749264289" type="Sprite4" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="411421553578570" type="System">
+                    <param id="0" name="Seconds">4.0</param>
+                </action>
+                <action id="-3" name="Create object" sid="739166029655999" type="System">
+                    <param id="0" name="Object to create">Sprite4</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">264</param>
+                    <param id="3" name="Y">419</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="269085564852466">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="537582715053363" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="796172976559226" type="System">
+                    <param id="0" name="Object to create">Projectile</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">Player.X</param>
+                    <param id="3" name="Y">Player.Y</param>
+                </action>
+                <action id="5" name="Set frame" sid="995824219718786" type="Projectile">
+                    <param id="0" name="Frame number">Player.AnimationFrame</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="612584128843164">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="532216352635693" type="Projectile" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="431430050623946" type="Projectile" />
+            </actions>
+        </event-block>
+        <event-block sid="892673056911783">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="716990459639747" type="Projectile">
+                    <param id="0" name="Object">Enemy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="676744511616116" type="System">
+                    <param id="0" name="Variable">EnemyHealth</param>
+                    <param id="1" name="Value">0.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="535201319295461" type="Projectile" />
+            </actions>
+        </event-block>
+        <event-block sid="802972411940190">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="518261092723416" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="831314624750438" type="Text">
+                    <param id="0" name="Text">&quot;Enemy Health &quot; &amp; EnemyHealth</param>
+                </action>
             </actions>
         </event-block>
     </events>

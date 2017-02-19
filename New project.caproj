@@ -10,9 +10,13 @@
     <unique-id>3edeayld2g9sl</unique-id>
     <saved-with-version>23900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
     </used-behaviors>
     <used-effects />
@@ -94,6 +98,91 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Keyboard" sid="597101677447965">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Projectile" sid="483516543368555">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="321228233810138">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="169958751694732" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.192" y="0.624" />
+                            <point x="0.22" y="0.472" />
+                            <point x="0.748" y="0.472" />
+                            <point x="0.756" y="0.624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.192" y="0.624" />
+                            <point x="0.22" y="0.472" />
+                            <point x="0.748" y="0.472" />
+                            <point x="0.756" y="0.624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.192" y="0.624" />
+                            <point x="0.22" y="0.472" />
+                            <point x="0.748" y="0.472" />
+                            <point x="0.756" y="0.624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.192" y="0.624" />
+                            <point x="0.22" y="0.472" />
+                            <point x="0.748" y="0.472" />
+                            <point x="0.756" y="0.624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.192" y="0.624" />
+                            <point x="0.22" y="0.472" />
+                            <point x="0.748" y="0.472" />
+                            <point x="0.756" y="0.624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.192" y="0.624" />
+                            <point x="0.22" y="0.472" />
+                            <point x="0.748" y="0.472" />
+                            <point x="0.756" y="0.624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.192" y="0.624" />
+                            <point x="0.22" y="0.472" />
+                            <point x="0.748" y="0.472" />
+                            <point x="0.756" y="0.624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.192" y="0.624" />
+                            <point x="0.22" y="0.472" />
+                            <point x="0.748" y="0.472" />
+                            <point x="0.756" y="0.624" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBox" sid="931429071341482">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Text" sid="658638928548526">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -102,7 +191,9 @@
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Keyboard" uid="5" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
