@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 2</name>
-    <sid>665214376648342</sid>
-    <event-sheet>Event sheet 2</event-sheet>
+    <name>Title</name>
+    <sid>798230328239989</sid>
+    <event-sheet>Title ES</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="118875151983366">
+        <layer name="Layer 0" sid="667383465254364">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,166 +29,36 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Player" uid="8">
+                <instance type="Text2" uid="23">
                     <properties>
+                        <text>COLORED</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <font>Arial,-48,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
-                    <behavior-instances>
-                        <behavior-instance type="8Direction">
-                            <properties>
-                                <max-speed>200</max-speed>
-                                <acceleration>600</acceleration>
-                                <deceleration>500</deceleration>
-                                <directions>8 directions</directions>
-                                <set-angle>No</set-angle>
-                                <default-controls>Yes</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>237</x>
-                        <y>535</y>
+                        <x>113</x>
+                        <y>35</y>
                         <z>0</z>
-                        <width>20</width>
-                        <height>21</height>
+                        <width>340</width>
+                        <height>101</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="9">
+                <instance type="Text3" uid="24">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>395.5</x>
-                        <y>361.5</y>
-                        <z>0</z>
-                        <width>30</width>
-                        <height>24</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite3" uid="10">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>55</x>
-                        <y>362</y>
-                        <z>0</z>
-                        <width>31</width>
-                        <height>25</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite4" uid="11">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>230.5</x>
-                        <y>263.5</y>
-                        <z>0</z>
-                        <width>30</width>
-                        <height>22</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="12">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>228</x>
-                        <y>76</y>
-                        <z>0</z>
-                        <width>43</width>
-                        <height>37</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Projectile" uid="13">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Bullet">
-                            <properties>
-                                <speed>350</speed>
-                                <acceleration>0</acceleration>
-                                <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>515</x>
-                        <y>524</y>
-                        <z>0</z>
-                        <width>16</width>
-                        <height>9</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>-1.57079649</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Text" uid="14">
-                    <properties>
-                        <text>Text</text>
+                        <text>Edd, Jonathan, Steven</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
@@ -201,11 +71,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2</x>
-                        <y>5</y>
+                        <x>310</x>
+                        <y>8</y>
                         <z>0</z>
-                        <width>218</width>
-                        <height>24</height>
+                        <width>200</width>
+                        <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -213,25 +83,200 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ProgressBar" uid="33">
+                <instance type="Sprite" uid="25">
                     <properties>
-                        <value>100</value>
-                        <maximum>100</maximum>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <id-optional></id-optional>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>143</x>
-                        <y>660</y>
+                        <x>314</x>
+                        <y>387</y>
                         <z>0</z>
-                        <width>200</width>
-                        <height>25</height>
+                        <width>40</width>
+                        <height>39</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text4" uid="26">
+                    <properties>
+                        <text>His color will change over time, make sure to be the same color he is in order to damage him!!</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>8</x>
+                        <y>352</y>
+                        <z>0</z>
+                        <width>275</width>
+                        <height>77</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite2" uid="27">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>434</x>
+                        <y>297</y>
+                        <z>0</z>
+                        <width>30</width>
+                        <height>24</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite3" uid="28">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>388</x>
+                        <y>297</y>
+                        <z>0</z>
+                        <width>31</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite4" uid="29">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>413</x>
+                        <y>258</y>
+                        <z>0</z>
+                        <width>30</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text5" uid="30">
+                    <properties>
+                        <text>This is how you change your color! You can mix and match the colors to see what you get! Be careful, any color but the neutral grey will cause you to take a lot of damage over time!</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>8</x>
+                        <y>224</y>
+                        <z>0</z>
+                        <width>323</width>
+                        <height>109</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text6" uid="31">
+                    <properties>
+                        <text>Shoot with the SPACEBAR and move with the ARROW keys! Reset color with ENTER button!</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>127</x>
+                        <y>486</y>
+                        <z>0</z>
+                        <width>236</width>
+                        <height>87</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text7" uid="32">
+                    <properties>
+                        <text>Press Any key to begin!</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>156</x>
+                        <y>644</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>

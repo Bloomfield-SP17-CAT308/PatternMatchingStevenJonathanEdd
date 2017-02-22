@@ -449,5 +449,34 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="326260541682184">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="918019659228817" type="Player">
+                    <param id="0" name="Comparison">1</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="968367106625393" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set progress" sid="525752687733427" type="ProgressBar">
+                    <param id="0" name="Value">ProgressBar.Progress-10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="228902361988702">
+            <conditions>
+                <condition id="1" name="Compare progress" sid="919162907708563" type="ProgressBar">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="166877082096542" type="System">
+                    <param id="0" name="Layout">Title</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
