@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>3edeayld2g9sl</unique-id>
-    <saved-with-version>24200</saved-with-version>
+    <saved-with-version>23900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -20,6 +20,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -55,17 +56,92 @@
                 <behavior-type name="8Direction" sid="470506446115440">
                     <behavior id="EightDir" />
                 </behavior-type>
+                <behavior-type name="BoundToLayout" sid="542165158997099">
+                    <behavior id="bound" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="442939165074973" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.435897" hotspotY="0.512821" original-source="C:\Users\Edd\Documents\BC\GroupGame2\Project3-Steven-Jonathan-Edd\Paint Shooter Final.png">
+                        <collision-poly>
+                            <point x="0.153846" y="0.333333" />
+                            <point x="1" y="0.153846" />
+                            <point x="1" y="0.25641" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.205128" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.435897" hotspotY="0.512821">
+                        <collision-poly>
+                            <point x="0.153846" y="0.333333" />
+                            <point x="1" y="0.153846" />
+                            <point x="1" y="0.25641" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.205128" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.435897" hotspotY="0.512821">
+                        <collision-poly>
+                            <point x="0.153846" y="0.333333" />
+                            <point x="1" y="0.153846" />
+                            <point x="1" y="0.25641" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.205128" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.435897" hotspotY="0.512821">
+                        <collision-poly>
+                            <point x="0.153846" y="0.333333" />
+                            <point x="1" y="0.153846" />
+                            <point x="1" y="0.25641" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.205128" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.435897" hotspotY="0.512821">
+                        <collision-poly>
+                            <point x="0.153846" y="0.333333" />
+                            <point x="1" y="0.153846" />
+                            <point x="1" y="0.25641" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.205128" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.435897" hotspotY="0.512821">
+                        <collision-poly>
+                            <point x="0.153846" y="0.333333" />
+                            <point x="1" y="0.153846" />
+                            <point x="1" y="0.25641" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.205128" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.435897" hotspotY="0.512821">
+                        <collision-poly>
+                            <point x="0.153846" y="0.333333" />
+                            <point x="1" y="0.153846" />
+                            <point x="1" y="0.25641" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.205128" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.435897" hotspotY="0.512821">
+                        <collision-poly>
+                            <point x="0.153846" y="0.333333" />
+                            <point x="1" y="0.153846" />
+                            <point x="1" y="0.25641" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.205128" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -73,7 +149,17 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="677063200227560" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Edd\Documents\BC\GroupGame2\Project3-Steven-Jonathan-Edd\Spray Can.png">
+                        <collision-poly>
+                            <point x="0.325" y="0.325" />
+                            <point x="0.5" y="0.0875" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.7" y="0.5" />
+                            <point x="0.7" y="0.7" />
+                            <point x="0.5" y="0.9625" />
+                            <point x="0.325" y="0.675" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -81,7 +167,17 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="305064287567881" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Edd\Documents\BC\GroupGame2\Project3-Steven-Jonathan-Edd\Spray Can.png">
+                        <collision-poly>
+                            <point x="0.325" y="0.325" />
+                            <point x="0.5" y="0.0875" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.7" y="0.5" />
+                            <point x="0.7" y="0.7" />
+                            <point x="0.5" y="0.9625" />
+                            <point x="0.325" y="0.675" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -89,7 +185,17 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="815248295052185" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Edd\Documents\BC\GroupGame2\Project3-Steven-Jonathan-Edd\Spray Can.png">
+                        <collision-poly>
+                            <point x="0.325" y="0.325" />
+                            <point x="0.5" y="0.0875" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.7" y="0.5" />
+                            <point x="0.7" y="0.7" />
+                            <point x="0.5" y="0.9625" />
+                            <point x="0.325" y="0.675" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -97,10 +203,42 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="712172817833122" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.472727" original-source="C:\Users\Edd\Documents\BC\GroupGame2\Project3-Steven-Jonathan-Edd\Enemy Boss Painter Final.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.272727" />
+                            <point x="1" y="0.309091" />
+                            <point x="1" y="1" />
+                            <point x="0.708333" y="1" />
+                            <point x="0.3125" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.472727">
+                        <collision-poly>
+                            <point x="0.166667" y="0.272727" />
+                            <point x="1" y="0.309091" />
+                            <point x="1" y="1" />
+                            <point x="0.708333" y="1" />
+                            <point x="0.3125" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.472727">
+                        <collision-poly>
+                            <point x="0.166667" y="0.272727" />
+                            <point x="1" y="0.309091" />
+                            <point x="1" y="1" />
+                            <point x="0.708333" y="1" />
+                            <point x="0.3125" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.472727">
+                        <collision-poly>
+                            <point x="0.166667" y="0.272727" />
+                            <point x="1" y="0.309091" />
+                            <point x="1" y="1" />
+                            <point x="0.708333" y="1" />
+                            <point x="0.3125" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -120,8 +258,8 @@
                         <collision-poly>
                             <point x="0.192" y="0.624" />
                             <point x="0.22" y="0.472" />
-                            <point x="0.748" y="0.472" />
-                            <point x="0.756" y="0.624" />
+                            <point x="0.824" y="0.472" />
+                            <point x="0.824" y="0.624" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
